@@ -1,0 +1,74 @@
+/* Estilo tenebroso general */
+body {
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+                      url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="20" height="20" fill="%23171717" fill-opacity="0.4"/%3E%3C/svg%3E');
+    color: #bb0000;
+}
+
+/* Estilo para el contenido principal */
+.container {
+    background-color: rgba(20, 0, 0, 0.9);
+    border: 1px solid #400;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 3.5rem;
+    color: #ff0000;
+    text-shadow: -2px -2px 0 #000,
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000,
+                 0 0 15px #ff0000;
+    letter-spacing: 4px;
+    animation: flicker 4s infinite;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    background-color: #1a0000;
+    border: 1px solid #400;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.card-title {
+    color: #ff0000;
+    font-family: 'Creepster', cursive;
+}
+
+/* Animación de parpadeo para el título */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+/* Efecto de hover en los iframes */
+iframe:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Personalización de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a0000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #400;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #600;
+}
